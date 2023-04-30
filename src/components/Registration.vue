@@ -9,11 +9,20 @@ const count = ref(0)
 </script>
 
 <template>
-    <form class="login-form mt-5">
+    <form class="registration-form mt-5">
         <div class="form-icon primary-bg">
             <span><i class="fa fa-user"></i></span>
         </div>
-        <h3 class="mb-5">Login</h3> <!-- Lagay dito yung title ng thesis nila or whatever-->
+        <h3 class="mb-5">Registration</h3> <!-- Lagay dito yung title ng thesis nila or whatever-->
+        <div class="input-group mb-3">
+            <span class="input-group-text primary-bg">
+                <i class="text-white fa fa-user"></i>
+            </span>
+            <div class="form-floating">
+                <input type="name" class="form-control" id="name" placeholder="Name">
+                <label for="name">Name</label>
+            </div>
+        </div>
         <div class="input-group mb-3">
             <span class="input-group-text primary-bg">
                 <i class="text-white fa fa-envelope"></i>
@@ -32,6 +41,15 @@ const count = ref(0)
                 <label for="password">Password</label>
             </div>
         </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text primary-bg">
+                <i class="text-white fa fa-lock"></i>
+            </span>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password">
+                <label for="confirm_password">Confirm Password</label>
+            </div>
+        </div>
         <div class="d-grid">
             <button class="btn primary-bg" type="submit">Submit</button>
         </div>
@@ -42,7 +60,7 @@ const count = ref(0)
     .primary-bg {
         background-color: #5891ff;
     }
-    .login-form{
+    .registration-form{
         background-color: #fff;
         max-width: 600px;
         margin: auto;
@@ -51,7 +69,7 @@ const count = ref(0)
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
     }
 
-    .login-form .form-icon{
+    .registration-form .form-icon{
         text-align: center;
         border-radius: 50%;
         font-size: 40px;
@@ -63,7 +81,7 @@ const count = ref(0)
         line-height: 100px;
     }
 
-    .login-form button{
+    .registration-form button{
         border-radius: 30px;
         padding: 10px 20px;
         font-size: 18px;
