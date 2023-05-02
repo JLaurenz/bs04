@@ -34,6 +34,15 @@ const count = ref(0)
         </div>
         <div class="input-group mb-3">
             <span class="input-group-text primary-bg">
+                <i class="text-white fa fa-hashtag"></i>
+            </span>
+            <div class="form-floating">
+                <input type="classcode" class="form-control" id="classcode" placeholder="Class Code">
+                <label for="classcode">Class Code</label>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text primary-bg">
                 <i class="text-white fa fa-lock"></i>
             </span>
             <div class="form-floating">
